@@ -8,9 +8,7 @@
  *
  * Main module of the application.
  */
-angular.module('connectApp', [
-    'ngRoute',
-  ])
+angular.module('connectApp', ['ngRoute',])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/one', {
@@ -21,8 +19,8 @@ angular.module('connectApp', [
         controller: 'AjaxCtrl'
       })
       .when('/three', {
-        templateUrl: 'views/gallary.html',
-        controller: 'GallaryCtrl'
+        templateUrl: 'views/gallery.html',
+        controller: 'GalleryCtrl'
       })
       .otherwise({
         redirectTo: '/one'
