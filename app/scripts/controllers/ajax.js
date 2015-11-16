@@ -1,5 +1,6 @@
 (function () {
   'use strict';
+  /*jshint latedef: nofunc */
 
   angular.module('connectApp')
     .controller('AjaxCtrl', AjaxCtrl);

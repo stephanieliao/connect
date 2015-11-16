@@ -25,10 +25,10 @@
     // });
 
     it('should attach a list of colours to the scope', function() {
-      var colour_list = ['red', 'blue', 'green', 'white', 'black'];
+      var colourList = ['red', 'blue', 'green', 'white', 'black'];
       ajaxCtrl();
       expect(ajaxScope.lists.length).toBe(5);
-      expect(ajaxScope.lists).toEqual(colour_list);
+      expect(ajaxScope.lists).toEqual(colourList);
     });
 
     // it('should submit ajax request and get response', function() {

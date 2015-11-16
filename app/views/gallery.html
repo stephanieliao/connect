@@ -1,11 +1,9 @@
 <div class="container question-3" ng-controller="GalleryCtrl">
-  <div id="gallery">
-    <img ng-src="images/{{ image.src }}" title="{{ image.title }}" class="image img-responsive" />
+  <div class="btn-group pull-right" role="group" id="menu-photo">
+    <button ng-repeat="image in images" class="btn btn-default btn-photo" ng-click="showImage(image.index)">{{image.index}}</button>
   </div>
 
-  <div class="">
-    <div class="btn-group pull-right" role="group" id="menu-photo">
-      <button ng-repeat="image in images" class="btn btn-default btn-photo" ng-click="showImage(image.index)">{{image.index}}</button>
-    </div>
+  <div id="gallery">
+    <img ng-src="images/{{ image.src }}" title="{{ image.title }}" class="image img-responsive" />
   </div>
 </div>

@@ -19,32 +19,32 @@
 
     it('should attach a list of images to the scope', function() {
       galleryCtrl();
-      expect(galleryScope.images.length).toBe(4);
+      expect(galleryScope.images.length).toBe(5);
     });
 
     it('should attach first images to the scope', function() {
-      var first_image = {
-        src: 'spring.png',
-        index: 1
-      };
+      var firstImage = { src: 'snowdonia_1.JPG', index: 1 };
       galleryCtrl();
-      expect(galleryScope.image).toEqual(first_image);
+      expect(galleryScope.image).toEqual(firstImage);
     });
 
     it('should show image with image index', function() {
-      var first_image = { src: 'spring.png', index: 1},
-          second_image ={ src: 'summer.png', index: 2},
-          third_image = { src: 'autumn.png', index: 3},
-          forth_image = { src: 'winter.png', index: 4};
+      var firstImage = { src: 'snowdonia_1.JPG', index: 1 },
+          secondImage = { src: 'snowdonia_2.JPG', index: 2 },
+          thirdImage = { src: 'snowdonia_3.JPG', index: 3 },
+          forthImage = { src: 'snowdonia_4.JPG', index: 4 },
+          fifthImage = { src: 'snowdonia_5.JPG', index: 5 };
       galleryCtrl();
       galleryScope.showImage(1);
-      expect(galleryScope.image).toEqual(first_image);
+      expect(galleryScope.image).toEqual(firstImage);
       galleryScope.showImage(2);
-      expect(galleryScope.image).toEqual(second_image);
+      expect(galleryScope.image).toEqual(secondImage);
       galleryScope.showImage(3);
-      expect(galleryScope.image).toEqual(third_image);
+      expect(galleryScope.image).toEqual(thirdImage);
       galleryScope.showImage(4);
-      expect(galleryScope.image).toEqual(forth_image);
+      expect(galleryScope.image).toEqual(forthImage);
+      galleryScope.showImage(5);
+      expect(galleryScope.image).toEqual(fifthImage);
     });
 
   });

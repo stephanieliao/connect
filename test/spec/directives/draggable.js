@@ -16,19 +16,19 @@
       draggableScope.$digest();
     }));
 
-    it("should have position absolute style", function() {
+    it('should have position absolute style', function() {
       expect(draggableElement.css('position')).toBe('absolute');
     });
 
-    it("should have top style", function() {
+    it('should have top style', function() {
       expect(draggableElement.css('top')).toBeDefined();
     });
 
-    it("should have left style", function() {
+    it('should have left style', function() {
       expect(draggableElement.css('left')).toBeDefined();
     });
 
-    it("should have left style", function() {
+    it('should have left style', function() {
       expect(draggableElement.attr('draggable')).toBeDefined();
     });
 
