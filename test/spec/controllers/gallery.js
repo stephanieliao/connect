@@ -28,6 +28,11 @@
       expect(galleryScope.image).toEqual(firstImage);
     });
 
+    it('should have a showImage() function', function () {
+      galleryCtrl();
+      expect(angular.isFunction(galleryScope.showImage)).toBe(true);
+    });
+
     it('should show image with image index', function() {
       var firstImage = { src: 'snowdonia_1.JPG', index: 1 },
           secondImage = { src: 'snowdonia_2.JPG', index: 2 },
